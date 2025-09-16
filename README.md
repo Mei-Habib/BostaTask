@@ -6,11 +6,11 @@ An iOS sample app that fetches a **random user** from JSONPlaceholder, loads tha
 
 ## Preview
 
-Add screenshots in `docs/` and update the paths below:
-
 | Profile | Photos + Search | Viewer |
 |---|---|---|
-| ![Profile](docs/profile.png) | ![Photos](docs/screen-photos.png) | ![Viewer](docs/screen-viewer.png) |
+| ![Profile](docs/profile.png) | ![Photos 1](docs/photos-1.png) ![Photos 2](docs/photos-2.png) ![Photos 3](docs/photos-3.png) | ![Viewer 1](docs/viewer-1.png) ![Viewer 2](docs/viewer-2.png) ![Viewer 3](docs/viewer-3.png) |
+
+
 
 ---
 
