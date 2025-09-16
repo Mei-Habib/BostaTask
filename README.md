@@ -1,4 +1,4 @@
-# Bosta
+# BostaTask
 
 An iOS sample app that fetches a **random user** from JSONPlaceholder, loads that user’s **albums**, and shows **photos** with live search — built with **RxSwift / RxCocoa**, **Moya / RxMoya**, and **MVVM**.
 
