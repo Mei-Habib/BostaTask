@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA253F882E79905700F7831B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FA253F872E79905700F7831B /* RxBlocking */; };
 		FA4E6AEE2E776E1A009F5659 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = FA4E6AED2E776E1A009F5659 /* Moya */; };
 		FA676EC52E78DC0000B60C67 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA676EC42E78DC0000B60C67 /* RxSwift */; };
 		FA676EC72E78DC0600B60C67 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FA676EC62E78DC0600B60C67 /* RxCocoa */; };
 		FA676EC92E78DC0C00B60C67 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = FA676EC82E78DC0C00B60C67 /* RxMoya */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA253F7C2E798AD900F7831B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA8922E52E7712D900C6B4E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8922EC2E7712D900C6B4E6;
+			remoteInfo = bostaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		FA253F782E798AD900F7831B /* BostaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BostaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8922ED2E7712D900C6B4E6 /* bostaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bostaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -28,6 +40,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA253F792E798AD900F7831B /* BostaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BostaTests;
+			sourceTree = "<group>";
+		};
 		FA8922EF2E7712D900C6B4E6 /* bostaDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -39,6 +56,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA253F752E798AD900F7831B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA8922EA2E7712D900C6B4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +71,7 @@
 				FA676EC52E78DC0000B60C67 /* RxSwift in Frameworks */,
 				FA4E6AEE2E776E1A009F5659 /* Moya in Frameworks */,
 				FA676EC72E78DC0600B60C67 /* RxCocoa in Frameworks */,
+				FA253F882E79905700F7831B /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FA8922EF2E7712D900C6B4E6 /* bostaDemo */,
+				FA253F792E798AD900F7831B /* BostaTests */,
 				FA4E6AEC2E776E1A009F5659 /* Frameworks */,
 				FA8922EE2E7712D900C6B4E6 /* Products */,
 			);
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FA8922ED2E7712D900C6B4E6 /* bostaDemo.app */,
+				FA253F782E798AD900F7831B /* BostaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +107,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA253F772E798AD900F7831B /* BostaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA253F802E798AD900F7831B /* Build configuration list for PBXNativeTarget "BostaTests" */;
+			buildPhases = (
+				FA253F742E798AD900F7831B /* Sources */,
+				FA253F752E798AD900F7831B /* Frameworks */,
+				FA253F762E798AD900F7831B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA253F7D2E798AD900F7831B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA253F792E798AD900F7831B /* BostaTests */,
+			);
+			name = BostaTests;
+			packageProductDependencies = (
+			);
+			productName = BostaTests;
+			productReference = FA253F782E798AD900F7831B /* BostaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FA8922EC2E7712D900C6B4E6 /* bostaDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8923002E7712DB00C6B4E6 /* Build configuration list for PBXNativeTarget "bostaDemo" */;
@@ -101,6 +151,7 @@
 				FA676EC42E78DC0000B60C67 /* RxSwift */,
 				FA676EC62E78DC0600B60C67 /* RxCocoa */,
 				FA676EC82E78DC0C00B60C67 /* RxMoya */,
+				FA253F872E79905700F7831B /* RxBlocking */,
 			);
 			productName = bostaDemo;
 			productReference = FA8922ED2E7712D900C6B4E6 /* bostaDemo.app */;
@@ -116,6 +167,10 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					FA253F772E798AD900F7831B = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = FA8922EC2E7712D900C6B4E6;
+					};
 					FA8922EC2E7712D900C6B4E6 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -140,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				FA8922EC2E7712D900C6B4E6 /* bostaDemo */,
+				FA253F772E798AD900F7831B /* BostaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA253F762E798AD900F7831B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA8922EB2E7712D900C6B4E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,6 +218,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA253F742E798AD900F7831B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA8922E92E7712D900C6B4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,7 +234,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FA253F7D2E798AD900F7831B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA8922EC2E7712D900C6B4E6 /* bostaDemo */;
+			targetProxy = FA253F7C2E798AD900F7831B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FA253F7E2E798AD900F7831B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.BostaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bostaDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bostaDemo";
+			};
+			name = Debug;
+		};
+		FA253F7F2E798AD900F7831B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.BostaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bostaDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bostaDemo";
+			};
+			name = Release;
+		};
 		FA8923012E7712DB00C6B4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -341,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA253F802E798AD900F7831B /* Build configuration list for PBXNativeTarget "BostaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA253F7E2E798AD900F7831B /* Debug */,
+				FA253F7F2E798AD900F7831B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA8922E82E7712D900C6B4E6 /* Build configuration list for PBXProject "bostaDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -381,6 +502,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA253F872E79905700F7831B /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA676EC32E78DBF100B60C67 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
 		FA4E6AED2E776E1A009F5659 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA4E6AEB2E776E0B009F5659 /* XCRemoteSwiftPackageReference "Moya" */;

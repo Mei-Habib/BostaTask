@@ -18,7 +18,19 @@ protocol Networkable {
 
 final class NetworkManager: Networkable {
     static let shared = NetworkManager()
-    private init() {}
+
+    private let provider: MoyaProvider<JSONPlaceholder>
+
+    private init() {
+       self.provider = MoyaProvider<JSONPlaceholder>(
+           session: Self.session,
+           plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .verbose))]
+       )
+    }
+
+    internal init(provider: MoyaProvider<JSONPlaceholder>) {
+       self.provider = provider
+    }
     
     private static let session: Session = {
         #if targetEnvironment(simulator)
@@ -28,11 +40,6 @@ final class NetworkManager: Networkable {
         #endif
         return Session(configuration: config)
     }()
-    
-    private let provider = MoyaProvider<JSONPlaceholder>(
-        session: session,
-        plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .verbose))]
-    )
     
     func fetchUsers() -> Single<[User]> {
         provider.rx.request(.users)
