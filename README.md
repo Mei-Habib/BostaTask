@@ -10,7 +10,7 @@ Add screenshots in `docs/` and update the paths below:
 
 | Profile | Photos + Search | Viewer |
 |---|---|---|
-| ![Profile](docs/screen-profile.png) | ![Photos](docs/screen-photos.png) | ![Viewer](docs/screen-viewer.png) |
+| ![Profile](docs/profile.png) | ![Photos](docs/screen-photos.png) | ![Viewer](docs/screen-viewer.png) |
 
 ---
 
